@@ -1,7 +1,19 @@
 import './App.css';
 
+type Person = {
+  name: string;
+  age: number;
+  profession: string;
+  car: string;
+};
+
 export default function App() {
-  const username = 'Cathy';
-  const defaultName = username || 'Stranger';
-  console.log(defaultName);
+  const person: Person = {
+    name: 'Cathy',
+    age: 27,
+    profession: 'software engineer',
+    car: 'Subaru',
+  };
+
+  console.log(person['name']);
 }
