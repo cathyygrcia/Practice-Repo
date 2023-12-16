@@ -1,7 +1,9 @@
 import './App.css';
 
 export default function App() {
-  const groceryList = ['apples', 'bananas', 'pasta', 'coconut'];
-  groceryList.unshift('cake', 'brownies');
-  console.log(groceryList);
+  const names = ['Cathy', 'Katy', 'Anna', 'Vane', 'Gen', 'Valerie'];
+
+  for (let i = 1; i < names.length; i++) {
+    console.log(names[i]);
+  }
 }
