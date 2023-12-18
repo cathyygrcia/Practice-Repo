@@ -1,16 +1,20 @@
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0;
 }
 
 .header {
-  background-color: #cdbe6b;
-  margin: 0;
+  background-color: #231123;
   display: flex;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 0.7rem;
 }
 
-/*
-  @media (prefers-color-scheme: light) {
-
-} */
+.header-title {
+  color: #dfbbb1;
+  font-family: 'EB Garamond', serif;
+  font-size: 3.5rem;
+}
