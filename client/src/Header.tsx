@@ -1,27 +1,37 @@
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { FaRegHeart } from 'react-icons/fa';
 export default function Header() {
-  function loops() {
-    const people = {
-      friends: {
-        name: 'Cathy',
-        age: 27,
-        career: 'Software Engineer',
-      },
-      'other-friends': {
-        name: 'Anna',
-        age: 28,
-        career: 'Pilates',
-      },
-    };
+  const people = {
+    friends: {
+      name: 'Cathy',
+      age: 27,
+      career: 'Software Engineer',
+    },
+    'other-friends': {
+      name: 'Anna',
+      age: 28,
+      career: 'Pilates',
+    },
+  };
 
-    for (const key in people) {
-      console.log(people[key].career);
-    }
+  function loops(obj, key) {
+    console.log(obj[key]);
   }
-  loops();
+
+  loops(people, ['friends']);
+
   return (
     <>
       <div className="header">
-        <h2 className="header-title">Cathy's Practice Space</h2>
+        <div className="column-third">
+          <GiHamburgerMenu className="menu" />
+        </div>
+        <div className="column-third">
+          <h2 className="header-title">Cathy's Coding Space</h2>
+        </div>
+        <div className="column-third heart-icon">
+          <FaRegHeart />
+        </div>
       </div>
     </>
   );

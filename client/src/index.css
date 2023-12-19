@@ -9,7 +9,8 @@ body {
 .header {
   background-color: #231123;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   padding: 0.7rem;
 }
 
@@ -17,4 +18,33 @@ body {
   color: #dfbbb1;
   font-family: 'EB Garamond', serif;
   font-size: 3.5rem;
+  text-align: center;
+}
+
+.column-third {
+  flex-basis: calc(100% / 3);
+}
+
+.column-two-thirds {
+  flex-basis: calc(66.667%);
+}
+
+.menu {
+  margin-left: 1rem;
+  color: #dfbbb1;
+  font-size: 2.5rem;
+}
+
+.heart-icon {
+  color: #dfbbb1;
+  font-size: 2.5rem;
+  text-align: end;
+  margin-right: 1rem;
+}
+
+@media screen and (width <= 500px) {
+  .header-title {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
