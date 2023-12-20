@@ -1,3 +1,13 @@
 export default function Drawer() {
-  return <h2>Hello Friends</h2>;
+  return (
+    <>
+      <div className="modal">
+        <ul className="list">
+          <li>Gallery</li>
+          <li>Concerts</li>
+          <li>Friends</li>
+        </ul>
+      </div>
+    </>
+  );
 }
