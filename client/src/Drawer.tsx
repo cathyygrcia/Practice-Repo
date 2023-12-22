@@ -1,11 +1,15 @@
+const categories = ['Concerts', 'Running', 'Friends', 'Gallery'];
+
 export default function Drawer() {
   return (
     <>
       <div className="modal">
-        <ul className="list">
-          <li>Gallery</li>
-          <li>Concerts</li>
-          <li>Friends</li>
+        <ul>
+          {categories.map((category, index) => (
+            <li key={index} className="list">
+              {category}
+            </li>
+          ))}
         </ul>
       </div>
     </>
