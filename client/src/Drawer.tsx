@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 export type Categories = string[];
 
@@ -9,10 +9,11 @@ export default function Drawer({ category }) {
         <ul className="ul">
           {category.map((i, index) => (
             <li key={index} className="list">
-              <Link to={`/categories/${i}`}>{i}</Link>
+              <Link to={`/${i}`}>{i}</Link>
             </li>
           ))}
         </ul>
+        <Outlet />
       </div>
     </>
   );
