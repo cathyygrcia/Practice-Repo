@@ -1,7 +1,9 @@
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaRegHeart } from 'react-icons/fa';
 import { useState } from 'react';
-import Drawer from './Drawer';
+import Drawer, { Categories } from './Drawer';
+
+const categories: Categories = ['Concerts', 'Running', 'Friends', 'Gallery'];
 
 export default function Header() {
   const [open, setIsOpen] = useState(false);
@@ -23,7 +25,7 @@ export default function Header() {
           <FaRegHeart />
         </div>
       </div>
-      {open && <Drawer />}
+      {open && <Drawer category={categories} />}
     </>
   );
 }

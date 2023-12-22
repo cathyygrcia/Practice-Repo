@@ -11,6 +11,10 @@ li {
   list-style: none;
 }
 
+.ul {
+  margin-top: 2rem;
+}
+
 .header {
   background-color: #231123;
   display: flex;

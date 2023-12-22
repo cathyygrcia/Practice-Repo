@@ -1,13 +1,13 @@
-const categories = ['Concerts', 'Running', 'Friends', 'Gallery'];
+export type Categories = string[];
 
-export default function Drawer() {
+export default function Drawer({ category }) {
   return (
     <>
       <div className="modal">
-        <ul>
-          {categories.map((category, index) => (
+        <ul className="ul">
+          {category.map((n, index) => (
             <li key={index} className="list">
-              {category}
+              {n}
             </li>
           ))}
         </ul>
