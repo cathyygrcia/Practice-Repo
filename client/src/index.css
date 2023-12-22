@@ -4,13 +4,15 @@ html {
 
 body {
   margin: 0;
-  background-color: rgb(0, 0, 0);
   background-image: url('http://www.zingerbugimages.com/backgrounds/colorful_starry_sky_glitter_background_seamless.gif');
-  background-attachment: fixed;
 }
 
 li {
   list-style: none;
+}
+
+.ul {
+  margin-top: 2rem;
 }
 
 .header {
@@ -52,7 +54,6 @@ li {
 .modal {
   margin-top: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  position: relative;
   display: flex;
   height: 100vw;
   width: 20%;
@@ -62,11 +63,16 @@ li {
 .list {
   color: #dfbbb1;
   font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (width <= 500px) {
   .header-title {
     font-size: 2rem;
     text-align: center;
+  }
+
+  .modal {
+    width: 50%;
   }
 }
