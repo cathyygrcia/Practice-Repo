@@ -66,6 +66,10 @@ li {
   margin-bottom: 1.5rem;
 }
 
+.white {
+  color: white;
+}
+
 @media screen and (width <= 500px) {
   .header-title {
     font-size: 2rem;

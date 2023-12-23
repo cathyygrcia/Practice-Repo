@@ -6,10 +6,10 @@ import Drawer, { Categories } from './Drawer';
 const categories: Categories = ['Concerts', 'Running', 'Friends', 'Gallery'];
 
 export default function Header() {
-  const [open, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   function handleClick() {
-    setIsOpen(!open);
+    setIsOpen(!isOpen);
   }
 
   return (
@@ -25,7 +25,7 @@ export default function Header() {
           <FaRegHeart />
         </div>
       </div>
-      {open && <Drawer category={categories} />}
+      {isOpen && <Drawer category={categories} />}
     </>
   );
 }
