@@ -7,9 +7,10 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path="" element={<Header />}></Route>
-        <Route path="Concerts" element={<Concerts />} />
-        <Route path="Running" element={<Running />} />
+        <Route path="" element={<Header />}>
+          <Route path="Concerts" element={<Concerts />} />
+          <Route path="Running" element={<Running />} />
+        </Route>
       </Routes>
     </>
   );
