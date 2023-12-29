@@ -1,6 +1,6 @@
 import Header from './Header';
 import { Routes, Route } from 'react-router-dom';
-import Concerts from './Concerts';
+import Music from './Music';
 import Running from './Running';
 import { useState } from 'react';
 
@@ -15,7 +15,7 @@ export default function App() {
     <>
       <Header isOpen={isOpen} handleClick={onHandleClick} />
       <Routes>
-        <Route path="Concerts" element={<Concerts isOpen={isOpen} />} />
+        <Route path="Concerts" element={<Music />} />
         <Route path="Running" element={<Running />} />
       </Routes>
     </>
