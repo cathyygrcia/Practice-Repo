@@ -10,15 +10,13 @@ export default function App() {
   function onHandleClick() {
     setIsOpen(!isOpen);
   }
+
   return (
     <>
+      <Header isOpen={isOpen} handleClick={onHandleClick} />
       <Routes>
-        <Route
-          path=""
-          element={<Header isOpen={isOpen} handleClick={onHandleClick} />}>
-          <Route path="Concerts" element={<Concerts isOpen={isOpen} />} />
-          <Route path="Running" element={<Running />} />
-        </Route>
+        <Route path="Concerts" element={<Concerts isOpen={isOpen} />} />
+        <Route path="Running" element={<Running />} />
       </Routes>
     </>
   );
