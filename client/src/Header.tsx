@@ -19,7 +19,7 @@ export default function Header({ isOpen, handleClick }) {
           <FaRegHeart />
         </div>
       </div>
-      {isOpen && <Drawer category={categories} />}
+      {isOpen && <Drawer category={categories} onHandleClick={handleClick} />}
     </>
   );
 }
