@@ -70,6 +70,29 @@ li {
   color: white;
 }
 
+.music-header {
+  display: flex;
+  justify-content: center;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  margin-top: 4rem;
+  color: #dfbbb1;
+}
+
+.row {
+  display: flex;
+}
+
+.column-fourth {
+  flex-basis: calc(25%);
+}
+
+.boxes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (width <= 500px) {
   .header-title {
     font-size: 2rem;
