@@ -11,6 +11,10 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .ul {
   margin-top: 2rem;
 }
@@ -89,6 +93,24 @@ li {
 
 .boxes {
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-text {
+  color: #dfbbb1;
+  font-size: 25px;
+}
+
+.homepage-box {
+  text-align: center;
+  margin-top: 5rem;
+  width: 60%;
+  background-color: rgb(17, 75, 95, 0.6);
+  border-radius: 3rem;
+}
+
+.homepage-container {
   display: flex;
   justify-content: center;
 }
