@@ -3,6 +3,21 @@ export default function Homepage() {
     <>
       <div className="homepage-container">
         <div className="homepage-box">
+          <div className="images-container">
+            <div className="image-wrapper">
+              <img
+                src="/images/cathyg.png"
+                alt="Cathy"
+                className="homepage-images"
+              />
+            </div>
+            <div className="image-wrapper">
+              <img src="/images/cathy.jpg" className="homepage-images" />
+            </div>
+            <div className="image-wrapper">
+              <img src="/images/cathyg2.png" className="homepage-images" />
+            </div>
+          </div>
           <p className="homepage-text">
             Welcome to Cathy's Coding Space! This is a place I created to keep
             up with my coding skills that I have gained over the past few

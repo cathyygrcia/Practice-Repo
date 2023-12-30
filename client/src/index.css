@@ -105,12 +105,27 @@ a {
 .homepage-box {
   text-align: center;
   margin-top: 5rem;
-  width: 60%;
+  width: 75%;
   background-color: rgb(17, 75, 95, 0.6);
-  border-radius: 3rem;
 }
 
 .homepage-container {
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-images {
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.images-container {
   display: flex;
   justify-content: center;
 }
