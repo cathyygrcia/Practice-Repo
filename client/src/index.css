@@ -120,6 +120,26 @@ a {
   margin-top: 3rem;
 }
 
+.homepage-text {
+  font-size: 20px;
+  color: #dfbbb1;
+}
+
+.homepage-text-container {
+  width: 60%;
+  background-color: rgb(35, 17, 35, 0.7);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 7%;
+}
+
+.homepage-text-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 @media screen and (width <= 500px) {
   .header-title {
     font-size: 2rem;
