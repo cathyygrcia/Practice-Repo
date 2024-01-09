@@ -76,7 +76,7 @@ a:hover {
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
   width: 20%;
@@ -96,7 +96,6 @@ a:hover {
 
 .row {
   display: flex;
-  border: 1px solid white;
 }
 
 .column-fourth {
@@ -104,9 +103,15 @@ a:hover {
 }
 
 .boxes {
-  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
+}
+
+.music-image {
+  width: 100%;
+  filter: brightness(75%);
+  border-radius: 4rem;
 }
 
 .image {
@@ -171,6 +176,28 @@ a:hover {
 .exit {
   display: flex;
   justify-content: flex-end;
+}
+
+.carousel-row {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+}
+
+.carousel-third {
+  display: flex;
+  flex-basis: calc(50%);
+}
+
+.test {
+  width: 100%;
+  filter: brightness(75%);
+  border-radius: 4rem;
 }
 
 @media screen and (width <= 1200px) {
