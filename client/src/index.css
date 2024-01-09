@@ -16,7 +16,7 @@ a {
 }
 
 .ul {
-  margin-top: 2rem;
+  margin-top: 7rem;
 }
 
 .header {
@@ -149,6 +149,16 @@ a {
   justify-content: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.exit-styles {
+  color: white;
+  font-size: 3rem;
+}
+
+.exit {
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media screen and (width <= 500px) {
