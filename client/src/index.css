@@ -94,17 +94,9 @@ a:hover {
   color: white;
 }
 
-.music-header {
-  display: flex;
-  justify-content: center;
-  font-family: 'EB Garamond', serif;
-  font-size: 20px;
-  margin-top: 4rem;
-  color: #dfbbb1;
-}
-
 .row {
   display: flex;
+  border: 1px solid white;
 }
 
 .column-fourth {
