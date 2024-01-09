@@ -11,6 +11,19 @@ const carouselImages2 = [
   '/images/TheSpecials.jpeg',
 ];
 
+const artistNames = [
+  'Tribal Seeds',
+  'The Skints',
+  'Lila Ike',
+  'Protoje',
+  'The Interrupters',
+  'The Specials',
+  'Iya Terra',
+  'Hirie',
+  'The Expanders',
+  'Fortunate Youth',
+];
+
 export default function Music() {
   const [currentIndex1, setCurrentIndex1] = useState(0);
   const [currentIndex2, setCurrentIndex2] = useState(0);
@@ -42,18 +55,25 @@ export default function Music() {
           <div className="carousel-third">
             <img
               src={carouselImages1[currentIndex1]}
-              className="test"
+              className="carousel-images"
               alt={`music-${currentIndex1}`}
             />
           </div>
           <div className="carousel-third">
             <img
               src={carouselImages2[currentIndex2]}
-              className="test"
+              className="carousel-images"
               alt={`music-${currentIndex2}`}
             />
           </div>
         </div>
+      </div>
+      <div>
+        <ul className="artist-container">
+          {artistNames.map((name) => (
+            <li className="artist-names">{name}</li>
+          ))}
+        </ul>
       </div>
       <div className="row">
         <div className="column-fourth">

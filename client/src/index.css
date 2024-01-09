@@ -186,7 +186,7 @@ a:hover {
 .carousel-container {
   display: flex;
   justify-content: center;
-  width: 75%;
+  width: 100%;
 }
 
 .carousel-third {
@@ -194,10 +194,22 @@ a:hover {
   flex-basis: calc(50%);
 }
 
-.test {
+.carousel-images {
   width: 100%;
   filter: brightness(75%);
   border-radius: 4rem;
+}
+
+.artist-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(35, 17, 35, 0.7);
+  margin: 0;
+}
+
+.artist-names {
+  color: #dfbbb1;
+  font-size: 2.3rem;
 }
 
 @media screen and (width <= 1200px) {
