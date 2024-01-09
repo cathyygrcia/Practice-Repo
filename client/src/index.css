@@ -8,15 +8,27 @@ body {
 }
 
 li {
-  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 a {
   text-decoration: none;
+  color: #dfbbb1;
+}
+
+a:hover {
+  color: white;
 }
 
 .ul {
-  margin-top: 2rem;
+  margin-top: 4rem;
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
 }
 
 .header {
@@ -46,6 +58,10 @@ a {
   margin-left: 1rem;
   color: #dfbbb1;
   font-size: 2.5rem;
+}
+
+.menu:hover {
+  cursor: pointer;
 }
 
 .heart-icon {
@@ -151,6 +167,20 @@ a {
   margin-bottom: 3rem;
 }
 
+.exit-styles {
+  color: #dfbbb1;
+  font-size: 3rem;
+}
+
+.exit-styles:hover {
+  cursor: pointer;
+}
+
+.exit {
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media screen and (width <= 500px) {
   .header-title {
     font-size: 2rem;
@@ -158,6 +188,17 @@ a {
   }
 
   .modal {
-    width: 50%;
+    width: 100%;
+  }
+
+  .images-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .homepage-text-container {
+    width: 100%;
   }
 }
