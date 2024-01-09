@@ -8,15 +8,27 @@ body {
 }
 
 li {
-  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 a {
   text-decoration: none;
+  color: #dfbbb1;
+}
+
+a:hover {
+  color: white;
 }
 
 .ul {
-  margin-top: 7rem;
+  margin-top: 4rem;
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
 }
 
 .header {
@@ -152,7 +164,7 @@ a {
 }
 
 .exit-styles {
-  color: white;
+  color: #dfbbb1;
   font-size: 3rem;
 }
 
