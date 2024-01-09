@@ -110,7 +110,8 @@ a:hover {
 
 .music-image {
   width: 100%;
-  filter: opacity(85%);
+  filter: brightness(75%);
+  border-radius: 4rem;
 }
 
 .image {
@@ -177,34 +178,26 @@ a:hover {
   justify-content: flex-end;
 }
 
-.carousel-container {
-  background-color: rgb(35, 17, 35, 0.6);
+.carousel-row {
   display: flex;
+  justify-content: center;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  width: 75%;
 }
 
 .carousel-third {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-basis: calc(50%);
 }
 
 .test {
-  width: 50%;
-  filter: opacity(85%);
-}
-
-.left-arrow {
-  color: white;
-  font-size: 3rem;
-  margin-left: 3rem;
-  cursor: pointer;
-}
-
-.right-arrow {
-  color: white;
-  font-size: 3rem;
-  margin-right: 3rem;
-  cursor: pointer;
+  width: 100%;
+  filter: brightness(75%);
+  border-radius: 4rem;
 }
 
 @media screen and (width <= 1200px) {
