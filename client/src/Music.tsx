@@ -4,22 +4,22 @@ export default function Music() {
       <div className="row">
         <div className="column-fourth">
           <div className="boxes white">
-            <img src="/images/Tribal_Seeds.jpeg" />
+            <img src="/images/TribalSeeds.jpeg" className="music-image" />
           </div>
         </div>
         <div className="column-fourth">
           <div className="boxes white">
-            <h2>Hello</h2>
+            <img src="/images/Hirie.jpeg" className="music-image" />
           </div>
         </div>
         <div className="column-fourth">
           <div className="boxes white">
-            <h2>Hello</h2>
+            <img src="/images/TheExpanders.jpeg" className="music-image" />
           </div>
         </div>
         <div className="column-fourth">
           <div className="boxes white">
-            <h2>Hello</h2>
+            <img src="/images/Protoje.jpeg" className="music-image" />
           </div>
         </div>
       </div>
