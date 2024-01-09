@@ -1,3 +1,5 @@
+import { FaChevronLeft } from 'react-icons/fa';
+import { FaChevronRight } from 'react-icons/fa';
 export default function Music() {
   return (
     <>
@@ -21,6 +23,17 @@ export default function Music() {
           <div className="boxes white">
             <img src="/images/Protoje.jpeg" className="music-image" />
           </div>
+        </div>
+      </div>
+      <div className="carousel-container">
+        <div className="carousel-third">
+          <FaChevronLeft className="left-arrow" />
+        </div>
+        <div className="carousel-third">
+          <img src="/images/Protoje.jpeg" className="test" />
+        </div>
+        <div className="carousel-third">
+          <FaChevronRight className="right-arrow" />
         </div>
       </div>
     </>
