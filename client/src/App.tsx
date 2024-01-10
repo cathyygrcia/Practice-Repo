@@ -4,6 +4,7 @@ import Music from './Music';
 import Running from './Running';
 import { useState } from 'react';
 import Homepage from './Homepage';
+import Friends from './Friends';
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="Music" element={<Music />} />
         <Route path="Running" element={<Running />} />
+        <Route path="Friends" element={<Friends />} />
       </Routes>
     </>
   );

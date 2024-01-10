@@ -80,14 +80,21 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   z-index: 1;
 }
 
 .list {
   color: #dfbbb1;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
+  background-color: rgb(35, 17, 35, 0.4);
+  border-radius: 3rem;
+  padding: 1rem;
+}
+
+.list:hover {
+  background-color: rgb(35, 17, 35, 0.8);
 }
 
 .white {
