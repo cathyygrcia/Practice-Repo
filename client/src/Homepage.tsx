@@ -9,7 +9,7 @@ export default function Homepage() {
         </div>
         <div className="column-third">
           <div className="image-wrapper">
-            <img src="/images/cathy.jpg" className="image" />
+            <img src="/images/cathy3.jpg" className="image" />
           </div>
         </div>
         <div className="column-third">
