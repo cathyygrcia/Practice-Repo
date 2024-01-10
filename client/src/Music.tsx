@@ -50,26 +50,19 @@ export default function Music() {
   }
 
   useEffect(() => {
-    const timeoutId1 = setTimeout(handleCarousel1, 2000);
+    const timeoutId1 = setTimeout(handleCarousel1, 1000);
 
     return () => clearTimeout(timeoutId1);
   }, [currentIndex1]);
 
   useEffect(() => {
-    const timeoutId2 = setTimeout(handleCarousel2, 2000);
+    const timeoutId2 = setTimeout(handleCarousel2, 1000);
 
     return () => clearTimeout(timeoutId2);
   }, [currentIndex2]);
 
   return (
     <>
-      <div className="artist-container">
-        {artistNames.map((name, s) => (
-          <a className="artist-names" href={spotify[s]} target="_blank">
-            {name}
-          </a>
-        ))}
-      </div>
       <div className="carousel-row">
         <div className="carousel-container">
           <div className="carousel-third">
@@ -88,7 +81,13 @@ export default function Music() {
           </div>
         </div>
       </div>
-
+      <div className="artist-container">
+        {artistNames.map((name, s) => (
+          <a className="artist-names" href={spotify[s]} target="_blank">
+            {name}
+          </a>
+        ))}
+      </div>
       <div className="row">
         <div className="column-fourth">
           <div className="boxes white">
