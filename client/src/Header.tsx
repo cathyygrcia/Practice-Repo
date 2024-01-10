@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Drawer, { Categories } from './Drawer';
 
-const categories: Categories = ['Music', 'Running', 'Friends', 'Gallery'];
+const categories: Categories = ['Music', 'Friends', 'Gallery', 'Running'];
 
 export default function Header({ isOpen, handleClick }) {
   return (

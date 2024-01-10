@@ -32,7 +32,7 @@ a:hover {
 }
 
 .header {
-  background-color: #231123;
+  background-color: rgb(35, 17, 35, 0.4);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -79,7 +79,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 100%;
   transition: transform 0.2s ease-in-out;
   z-index: 1;
 }
@@ -186,7 +186,7 @@ a:hover {
 .carousel-container {
   display: flex;
   justify-content: center;
-  width: 75%;
+  width: 100%;
 }
 
 .carousel-third {
@@ -194,10 +194,22 @@ a:hover {
   flex-basis: calc(50%);
 }
 
-.test {
+.carousel-images {
   width: 100%;
   filter: brightness(75%);
   border-radius: 4rem;
+}
+
+.artist-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(35, 17, 35, 0.4);
+}
+
+.artist-names {
+  color: #dfbbb1;
+  font-size: 2.3rem;
+  cursor: pointer;
 }
 
 @media screen and (width <= 1200px) {
@@ -219,6 +231,10 @@ a:hover {
   .homepage-text-container {
     width: 100%;
   }
+
+  .artist-names {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (width <= 900px) {
@@ -239,6 +255,10 @@ a:hover {
 
   .homepage-text-container {
     width: 100%;
+  }
+
+  .artist-names {
+    font-size: 1.5rem;
   }
 }
 
