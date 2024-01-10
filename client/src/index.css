@@ -204,12 +204,13 @@ a:hover {
   display: flex;
   justify-content: space-around;
   background-color: rgb(35, 17, 35, 0.7);
-  margin: 0;
+  border-top: 1px solid #dfbbb1;
 }
 
 .artist-names {
   color: #dfbbb1;
   font-size: 2.3rem;
+  cursor: pointer;
 }
 
 @media screen and (width <= 1200px) {

@@ -24,6 +24,19 @@ const artistNames = [
   'Fortunate Youth',
 ];
 
+const spotify = [
+  'https://open.spotify.com/artist/7jgZFR40bWjwOrRCOZFB02?autoplay=true',
+  'https://open.spotify.com/artist/39k4UDTgsWe6NCi6hgnfc1?autoplay=true',
+  'https://open.spotify.com/artist/0uAUrmEQbwcDFzg0v7VicO?autoplay=true',
+  'https://open.spotify.com/artist/7BGR8y1VZAWK2oR4zD9COr?autoplay=true',
+  'https://open.spotify.com/artist/25Maank76ry2Tmbi2Ql1SF?autoplay=true',
+  'https://open.spotify.com/artist/6xnvNmSzmeOE1bLKnYXKW3?autoplay=true',
+  'https://open.spotify.com/artist/1uXHYeD8JQjkaIGvEARs4D?autoplay=true',
+  'https://open.spotify.com/artist/0HYbyzzhI44iTHvYnf1nOs?autoplay=true',
+  'https://open.spotify.com/artist/6TofIIqBhodHJAZU6vh9sT?autoplay=true',
+  'https://open.spotify.com/artist/53eTH57OzNJCKOohjcWMoB?autoplay=true',
+];
+
 export default function Music() {
   const [currentIndex1, setCurrentIndex1] = useState(0);
   const [currentIndex2, setCurrentIndex2] = useState(0);
@@ -50,6 +63,13 @@ export default function Music() {
 
   return (
     <>
+      <div className="artist-container">
+        {artistNames.map((name, s) => (
+          <a className="artist-names" href={spotify[s]} target="_blank">
+            {name}
+          </a>
+        ))}
+      </div>
       <div className="carousel-row">
         <div className="carousel-container">
           <div className="carousel-third">
@@ -68,13 +88,7 @@ export default function Music() {
           </div>
         </div>
       </div>
-      <div>
-        <ul className="artist-container">
-          {artistNames.map((name) => (
-            <li className="artist-names">{name}</li>
-          ))}
-        </ul>
-      </div>
+
       <div className="row">
         <div className="column-fourth">
           <div className="boxes white">
