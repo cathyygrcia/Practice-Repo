@@ -219,6 +219,11 @@ a:hover {
   cursor: pointer;
 }
 
+.friends {
+  color: white;
+  font-size: 2rem;
+}
+
 @media screen and (width <= 1200px) {
   .header-title {
     font-size: 2rem;
