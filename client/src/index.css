@@ -219,9 +219,17 @@ a:hover {
   cursor: pointer;
 }
 
+.form {
+  margin-top: 2rem;
+}
+
 .friends {
-  color: white;
-  font-size: 2rem;
+  color: #dfbbb1;
+  font-size: 2.5rem;
+}
+
+input {
+  background-color: gray;
 }
 
 @media screen and (width <= 1200px) {
